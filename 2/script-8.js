@@ -21,4 +21,9 @@ for (let i = 0; i < 2; i++) {
     asapBuySumm = parseInt(prompt('Во сколько обойдется?', 1000));
 };
 
-alert(appData.budget/30);
+
+if (typeof(asapBuy) === 'string' && asapBuy != '' && asapBuySumm != '') {
+    alert(appData.budget/30);
+} else {
+    alert("Вы ввели недействительное значение");
+}
