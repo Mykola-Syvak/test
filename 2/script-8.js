@@ -2,9 +2,8 @@
 /*jshint esversion: 6 */
 let money = parseInt(prompt('Ваш бюджет на месяц?', 0));
 let time = new Date(prompt('Введите дату в формате YYYY-MM-DD', 'YYYY-MM-DD'));
-let asapBuy = prompt('Введите обязательную статью расходов в этом месяце', 'холодильник');
-let asapBuySumm = parseInt(prompt('Во сколько обойдется?', 1000));
-
+let asapBuy;
+let asapBuySumm;
 
 let appData = {
     budget: parseInt(money),
@@ -17,7 +16,9 @@ let appData = {
     savings: false
 };
 
+for (let i = 0; i < 2; i++) {
+    asapBuy = prompt('Введите обязательную статью расходов в этом месяце', 'холодильник');
+    asapBuySumm = parseInt(prompt('Во сколько обойдется?', 1000));
+};
 
-alert((money-appData.expenses.asapBuy)/30);
-
-alert((money-appData.expenses.asapBuy)/30);
+alert(appData.budget/30);
