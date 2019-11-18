@@ -19,3 +19,5 @@ let appData = {
 
 
 alert((money-appData.expenses.asapBuy)/30);
+
+alert((money-appData.expenses.asapBuy)/30);
