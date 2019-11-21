@@ -156,9 +156,9 @@ console.log(Object.keys(options).length);*/
 //     console.log(arr[i]);
 // }
 
-// arr.forEach(function(item, i, mass) {
-//     console.log(i + ': ' + item + " (массив: " + mass + ')');
-// });
+//  arr.forEach(function(item, i, mass) {
+//      console.log(i + ': ' + item + " (массив: " + mass + ')');
+//  });
 
 // console.log(arr);
 

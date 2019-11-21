@@ -65,13 +65,17 @@ let appData = {
         }
     },
     chooseIncome: function () {
-        
-            let items = prompt('Что принесет дополнительный доход? (Перечислите через запятую)', '');
-            if (typeof(items) === 'string' && typeof(items) != null && items != '') {
-                appData.income = items.split(', ');
-                appData.income.push(prompt("Может что-то еще?"));
-                appData.income.sort();
-            }
+            let items;
+            do {
+                items = prompt('Что принесет дополнительный доход? (Перечислите через запятую)', '');
+            } while (items === null || (typeof(items) != 'string') || items === '');
+            appData.income = items.split(', ');
+            appData.income.push(prompt("Может что-то еще?"));
+            appData.income.sort();
+            appData.income.forEach(function(item, i, mass) {
+                //console.log("Способы доп. заработка: " + (i + 1) + ' - ' + item);
+                alert("Способы доп. заработка: " + (i + 1) + ' - ' + item);
+            });
     }
 };
 
@@ -81,3 +85,7 @@ let appData = {
 // appData.checkSavings();
 // let y = 1; //возможно, нужно будет перенести эту запись в место до объекта appData
 // appData.chooseOptExpenses();
+appData.chooseIncome();
+for (let key in appData) {
+    console.log('Наша программа включает в себя данные: ' + key + ' имеет значение ' + appData[key]);
+};
