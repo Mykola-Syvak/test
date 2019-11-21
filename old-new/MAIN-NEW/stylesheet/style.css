@@ -1,0 +1,213 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/*
+  ========================================
+  Фон
+  ========================================
+*/
+
+body {
+  background: linear-gradient(45deg, rgba(116,71,240,1) 0%, rgba(116,71,240,1) 0%, rgba(95,178,249,1) 100%);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1000px;
+}
+
+.container {
+  background-color: #202a34;
+  width: auto;
+  height: 800px;
+  border-radius: 10px;
+  margin: 100px 70px 100px 70px;
+  padding: 2px;
+  box-shadow: 0 30px 100px 15px rgba(0,0,0,0.5);
+}
+
+/*
+  ========================================
+  Шапка
+  ========================================
+*/
+
+.header-nav {
+  background: linear-gradient(to right, rgba(31,41,51,1) 0%, rgba(31,41,51,1) 0%, rgba(37,52,67,1) 20%, rgba(37,52,67,1) 100%);
+  border-radius: 10px 10px 0 0;
+  width: auto;
+  height: 50px;
+}
+.logo {
+  background-color: #253443;
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+}
+.logo > img {
+  padding: 7px 7px;
+  height: 40px;
+}
+.input-form {
+  display: inline-block;
+  padding-top: 15px;
+  padding-left: 15px;
+  position: absolute;
+  color: #455268;
+
+}
+
+.input-form input {
+  background-color: transparent;
+  border: 0;
+  color: #d1d2d3;
+}
+
+.navigation {
+  display: inline-block;
+  position: absolute;
+  padding-top: 17px;
+  margin-left: 400px;
+}
+
+ul.navigation li {
+  display: inline-block;
+  padding-right: 25px;
+}
+#first-li {
+  color: #1066b3;
+}
+.user{
+  display: inline-block;
+  margin-left: 1050px;
+  margin-top: 4px;
+  position: absolute;
+}
+div.user > img {
+  width: 40px;
+  height:40px;
+  border-radius: 20px;
+}
+.user-name {
+  display: inline-block;
+  margin-left: 1100px;
+  margin-top: 17px;
+  position: absolute;
+}
+
+ul.user-hide-menu {
+  display: none;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.user-name li:hover > ul.user-hide-menu {
+  display: block;
+}
+
+
+
+/*
+  ========================================
+ Текста
+  ========================================
+*/
+@font-face{
+font-family: 'Museo Sans Cyrl 300';
+src: url('../fonts/MuseoSansCyrl_0.otf');
+}
+@font-face{
+font-family: 'Museo Sans Cyrl 500';
+src: url('../fonts/MuseoSansCyrl_1.otf');
+}
+@font-face{
+font-family: 'Museo Sans Cyrl 700';
+src: url('../fonts/MuseoSansCyrl_2.otf');
+}
+
+
+
+body {
+  font-family: "Museo Sans Cyrl 500", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+
+input.grey-text::placeholder {
+  color: #455268;
+  font-weight: bold;
+}
+input {
+  font-family: "Museo Sans Cyrl 500", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+.search-icon {
+  font-size: 14px;
+}
+.white-text {
+   color: #d1d2d3;
+   text-decoration: none;
+   font-weight: 500;
+}
+ul.white-text li > a {
+   color: #d1d2d3;
+   text-decoration: none;
+   font-weight: 500;
+}
+div.white-text a {
+  
+   color: #d1d2d3;
+   text-decoration: none;
+   font-weight: 500;
+   display: inline-block;
+}
+
+i.arrow {
+  padding-left: 5px;
+}
+
+
+

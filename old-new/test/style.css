@@ -1,0 +1,14 @@
+.submenu
+{
+    display: none;   
+    position: relative;
+    text-align: left;
+	width: 100px;
+    background-color: black;
+    padding: 5px;border: 1px solid #6B93FF;
+}
+
+div.main_menu_item:hover div
+{
+    display: block;
+}

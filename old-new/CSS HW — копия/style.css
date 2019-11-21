@@ -1,0 +1,77 @@
+body {
+	background-color:gray;
+	margin: -20px;
+	}
+
+header {
+	background-color:white;
+	border-radius: 20px;
+	height: 120px;
+	margin: 0 20% 0 20%;
+	margin-top: 0px;
+	padding-top: 0px;
+	z-index: 1;
+
+}
+
+img.header {
+	float: left;
+		}
+		
+h1.header {		
+		margin-left: 180px;
+		padding-top: 25px;
+		}
+div.header {
+		margin-left: 180px;
+}
+
+ul.main-menu {
+	margin: 0; /* Обнуляем значение отступов */
+    padding: 0px; /* Значение полей */
+}
+
+ul.main-menu li{
+	display: inline;
+	float: left;
+	z-index: 5;
+    padding-left: 5px;
+	background-color: white;
+	border-radius: 5px;
+	
+	}
+
+
+
+
+ul.sub-menu  {
+    position: relative;
+   
+	top: 4px;
+    left: 0px;
+    z-index: 10;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+	border-radius: 5px;
+	
+	
+	
+	}
+
+ul.sub-menu ul {
+	background-color: white;
+}
+
+
+
+ul.main-menu > li:hover ul.sub-menu  {
+    display: block;
+	background-color: white;
+}
+
+.sub-menu-div {
+	border: 1px black solid;
+}

@@ -1,0 +1,20 @@
+   <!DOCTYPE html>
+<html>
+ <head>
+  <title> First Page </title>
+  <meta charset="utf-8" />
+ </head>
+ 
+  <body>
+	
+	
+<footer>
+      <address>
+         Контакты <a href="mailto:mail@mail">Ф.И.О.</a>
+      </address>
+      <p>© copyright</p>
+   </footer>
+
+
+  </body>
+</html>
