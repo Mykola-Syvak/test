@@ -10,9 +10,14 @@
 //     wrapper = document.querySelector('.wrapper');
 
 let menuUl = document.querySelector('.menu'),
-    menuItems = document.querySelector('.menu-item');
+    menuItems = document.querySelector('.menu-item'),
+    list = document.getElementsByTagName('li');
        
-    menuUl.removeChild(menuItems[1]);
+    console.log(list[1]);
+
+    let replacedNode = menuUl.replaceChild(list[0], list[1]); // третий был удален и заменен
+    menuUl.insertBefore(replacedNode, list[2]);
+    
     //***ARBAYTEN***!!! head = document.querySelector('header');
 //***ARBAYTEN***!!!document.body.removeChild(head);
 
