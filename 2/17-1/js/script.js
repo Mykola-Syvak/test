@@ -2,13 +2,6 @@
 /*jshint esversion: 6 */
 /*jshint devel:true */
 
-// let box = document.getElementById('box'),
-//     btn = document.getElementsByTagName('button'),
-//     circle = document.getElementsByClassName('circle'),
-//     heart = document.querySelectorAll('.heart'),
-//     oneHeart = document.querySelector('.heart'),
-//     wrapper = document.querySelector('.wrapper');
-
 let menuUl = document.querySelector('.menu'),
     menuItems = document.querySelector('.menu-item'),
     list = document.getElementsByTagName('li'),
@@ -21,11 +14,11 @@ let menuUl = document.querySelector('.menu'),
     adv = document.querySelector('.adv');
        
     let replacedNode = menuUl.replaceChild(list[0], list[1]); // третий был удален и заменен
-    menuUl.insertBefore(replacedNode, list[2]);
+    menuUl.insertBefore(replacedNode, list[2]); // третий был удален и заменен
 
-    li.classList.add('menu-item');
-    li.textContent = 'Пятый пункт';
-    menuUl.insertBefore(li, list[4]); //добавили 5й пункт
+    li.classList.add('menu-item'); // добавляем класс в наш новый ли
+    li.textContent = 'Пятый пункт'; // добавляем текст в наш новый ли
+    menuUl.insertBefore(li, list[4]); //добавили 5й пункт - наш новый ли
 
     document.body.style.background = "url('img/apple_true.jpg')"; //меняем картинку бекграунда
     title.textContent = "Мы продаем только подлинную технику Apple"; //меняем слоган
