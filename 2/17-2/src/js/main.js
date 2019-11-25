@@ -49,8 +49,6 @@ startCalc.addEventListener('click', function() {
 
 let sumExp = 0;
 expensesBtn.addEventListener('click', function expensesBtnFnc() {
-    
-
     for (let i = 0; i < expensesItem.length; i++) {
         let a = expensesItem[i].value,
             b = expensesItem[++i].value;
@@ -66,9 +64,8 @@ expensesBtn.addEventListener('click', function expensesBtnFnc() {
         }
     }
     expensesValue.textContent = sumExp;
-    return sumExp;
+    console.log(sumExp);
 });
-
 
 optexpEnsesBtn.addEventListener('click', function() {
     for (let i = 0; i < optionalExpensesItem.length; i++) {
@@ -78,12 +75,10 @@ optexpEnsesBtn.addEventListener('click', function() {
     }
 });
 
-
-
 dayBudgetBtn.addEventListener('click', function() {
 
     if (appData.budget != undefined) {
-        appData.moneyPerDay = ((appData.budget) / 30).toFixed();
+        appData.moneyPerDay = ((appData.budget - sumExp) / 30).toFixed();
         daybudgetValue.textContent = appData.moneyPerDay;
 
         if (appData.moneyPerDay < 100) {
@@ -167,15 +162,10 @@ if (appData.startBtnCheck == false) {
     btnDisable(); 
  };
 
-let newSum;
+
 // for (let i = 0; i < appData.expenses.length; i++) {
 //     newSum = appData.expenses[i];
 // };
 
 
-for (var key in appData.expenses) {
-    console.log(appData.expenses[key]);
-    newSum += appData.expenses[key];
-};
 
-console.log(newSum);
