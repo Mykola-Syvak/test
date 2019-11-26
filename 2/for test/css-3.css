@@ -1,0 +1,22 @@
+.wrapper {
+    border-style: solid;
+    border-width: 2px;
+    height: 300px;
+    width: 300px;
+    border-color: red;
+}
+
+.square {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    width: 60px;
+    background-color: blue;
+}
+
+.btn-clock button {
+    height: 25px;
+    width: 75px;
+}
