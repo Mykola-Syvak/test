@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Timer 
+    // ///////////// Timer 
     let deadline = '2019-11-30';
 
     function getTimeRemaining(endtime) {
