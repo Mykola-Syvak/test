@@ -106,4 +106,13 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // Modal under timer
 
+    let descriptionBtn = document.querySelectorAll('.description-btn');
+    
+    for (let i = 0; i < descriptionBtn.length; i++) {
+        descriptionBtn[i].addEventListener('click', function() {
+            overlay.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+    };
+
 });
