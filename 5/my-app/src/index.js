@@ -1,27 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Clock from './App';
+import Button from './button.js';
 import * as serviceWorker from './serviceWorker';
 
-function Greet(props) {
 
-    return(
-        <h1> Hello {props.phrase}! My name is {props.name}</h1>
-    )
+class App extends React.Component {
+    render() {
+        return (
+            <div className="wrapper">
+                <Clock />
+                <Button />
+            </div>
+        )
+    }
 }
 
-function GreetAll() {
-    return (
-        <div>
-            <Greet phrase="World" name="Ivan"/>
-            <Greet phrase="World" name="Anna"/>
-            <Greet phrase="World" name="Alex"/>
-        </div>
-    )
-}
-
-ReactDOM.render(<GreetAll />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
