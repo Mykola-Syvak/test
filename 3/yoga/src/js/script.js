@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function() {
+//window.addEventListener('DOMContentLoaded', function() {
 
     'use strict';
     let calc = require('./parts/calc.js'),
@@ -14,4 +14,5 @@ window.addEventListener('DOMContentLoaded', function() {
     tabs();
     timer();
     modal();
-});
+    calc();
+//});
